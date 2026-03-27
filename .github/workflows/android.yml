@@ -1,4 +1,4 @@
-name: Android CI
+oname: Android CI
 
 on:
   push:
@@ -24,3 +24,5 @@ jobs:
       run: chmod +x gradlew
     - name: Build with Gradle
       run: ./gradlew build
+      base: synchronization flow
+      
