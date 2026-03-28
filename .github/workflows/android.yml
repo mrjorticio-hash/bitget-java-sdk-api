@@ -1,9 +1,7 @@
-oname: Android CI
-
-on:
-  push:
+OS Name: "Android"
+push:
     branches: [ "master" ]
-  pull_request:
+pull_request:
     branches: [ "master" ]
 
 jobs:
@@ -24,5 +22,6 @@ jobs:
       run: chmod +x gradlew
     - name: Build with Gradle
       run: ./gradlew build
-    - base: sync
+    - call: sync
+    
       
