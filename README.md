@@ -88,7 +88,7 @@ System.out.println(JSON.toJSONString(result));
 Map<String, String> paramMap = Maps.newHashMap();
 paramMap.put("symbol", "BTCUSDT_UMCBL");
 paramMap.put("startTime", "1695632659703");
-paramMap.put("endTime", "1695635659703");
+paramMap.put("endTime", "1695635659703"); ok
 ResponseResult result = bitgetRestClient.bitget().v1().request().get("/api/mix/v1/order/history", paramMap);
 System.out.println(JSON.toJSONString(result));
 ```
